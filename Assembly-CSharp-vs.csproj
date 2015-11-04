@@ -253,6 +253,9 @@
      <Compile Include="Assets\PrizmStarterKit\touchscript\examples\general\longpress\Scripts\LongPress_Button.cs" />
      <Compile Include="Assets\PrizmStarterKit\touchscript\examples\general\tap\Scripts\Tap_Breaker.cs" />
      <Compile Include="Assets\PrizmStarterKit\touchscript\examples\general\tap\Scripts\Tap_Spawner.cs" />
+     <Compile Include="Assets\RTS Effects\KunaiEditor\KunaiRotation.cs" />
+     <Compile Include="Assets\RTS Effects\Scripts\AnimatedUVs.cs" />
+     <Compile Include="Assets\RTS Effects\Scripts\ClickSpawn.cs" />
      <None Include="Assets\PrizmStarterKit\touchscript\Shaders\DebugDepthTest.shader" />
      <None Include="Assets\PrizmStarterKit\ThirdParty\unity-socket.io-master\SocketIO\JSONObject\readme.txt" />
      <None Include="Assets\PrizmStarterKit\touchscript\Shaders\DebugMultiplyDepthTest.shader" />
@@ -260,6 +263,7 @@
      <None Include="Assets\PrizmStarterKit\ThirdParty\unity-socket.io-master\readme.txt" />
      <None Include="Assets\PrizmStarterKit\touchscript\Shaders\DebugMultiplyNoDepthTest.shader" />
      <None Include="Assets\PrizmStarterKit\touchscript\examples\_misc\Shaders\UnlitColor.shader" />
+     <None Include="Assets\RTS Effects\KunaiEditor\Editor\Readme.txt" />
      <None Include="Assets\PrizmStarterKit\ThirdParty\JSON Tests\TroubleShoot.txt" />
      <None Include="Assets\PrizmStarterKit\ThirdParty\unity-socket.io-master\SocketIO\readme.txt" />
  <Reference Include="UnityEngine.Analytics">

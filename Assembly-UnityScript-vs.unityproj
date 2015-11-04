@@ -55,6 +55,7 @@
      <None Include="Assets\PrizmStarterKit\ThirdParty\unity-socket.io-master\readme.txt" />
      <None Include="Assets\PrizmStarterKit\touchscript\Shaders\DebugMultiplyNoDepthTest.shader" />
      <None Include="Assets\PrizmStarterKit\touchscript\examples\_misc\Shaders\UnlitColor.shader" />
+     <None Include="Assets\RTS Effects\KunaiEditor\Editor\Readme.txt" />
      <None Include="Assets\PrizmStarterKit\ThirdParty\JSON Tests\TroubleShoot.txt" />
      <None Include="Assets\PrizmStarterKit\ThirdParty\unity-socket.io-master\SocketIO\readme.txt" />
  <Reference Include="UnityEngine.Analytics">
