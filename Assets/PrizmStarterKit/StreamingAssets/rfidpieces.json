@@ -1,0 +1,10 @@
+{
+  "rfidPieces": [
+    { "tags": [ { "id": ["xx xx xx xx"], "attributes": [ "pokeball" ] } ] },
+    { "tags": [ { "id": ["aa bb cc dd"], "attributes": [ "mage", "character" ] } ] },
+    { "tags": [ { "id": [ "11 22 33 44", "yy yy yy yy" ], "attributes": [ "story", "card", "light" ] } ] },
+    { "tags": [ { "id": [ "01 5C 5A 26" ], "attributes": [ "card" ] } ] },
+    { "tags": [ { "id": [ "04 49 35 BA" ], "attributes": [ "pokeball" ] } ] },
+    { "tags": [ { "id": [ "A7 69 92 65" ], "attributes": [ "card" ] } ] }
+  ]
+}
