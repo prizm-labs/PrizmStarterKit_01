@@ -44,7 +44,7 @@ public class CreateDestroy_Reticle : MonoBehaviour {
 		Debug.LogError ("Item "+ID+" Location "+touchPoint);
 
 		GameObject my_ret = Instantiate(reticlePrefab, new Vector3(touchPoint.x-960, touchPoint.y-540, 70), Quaternion.Euler(0, 0, 0)) as GameObject;
-		//my_ret.transform.SetParent (mainPanel.transform);
+		my_ret.transform.SetParent (mainPanel.transform);
 	}
 	
 	public void STE(string ID, Vector3 touchPoint){
