@@ -50,6 +50,7 @@
      <Compile Include="Assets\PrizmStarterKit\PrizmLib\Scripts\Prizm.cs" />
      <Compile Include="Assets\PrizmStarterKit\PrizmLib\Scripts\SocketToJSON.cs" />
      <Compile Include="Assets\PrizmStarterKit\PrizmLib\Scripts\testManager.cs" />
+     <Compile Include="Assets\PrizmStarterKit\Scripts\Developer_Scripts(ProjectSpecific)\CreateDestroy_Reticle.cs" />
      <Compile Include="Assets\PrizmStarterKit\Scripts\Scripts_HandHeld\BootstrapHH.cs" />
      <Compile Include="Assets\PrizmStarterKit\Scripts\Scripts_HandHeld\ClientInitialization.cs" />
      <Compile Include="Assets\PrizmStarterKit\Scripts\Scripts_HandHeld\ExampleObject.cs" />
