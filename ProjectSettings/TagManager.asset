@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - GameManager
+  - BB
+  - Reticle
+  - p_Manager
   layers:
   - Default
   - TransparentFX

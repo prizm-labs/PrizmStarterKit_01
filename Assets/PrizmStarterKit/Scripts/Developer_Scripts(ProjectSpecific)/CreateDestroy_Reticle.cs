@@ -6,6 +6,7 @@ using Prizm;
 using SimpleJSON;
 using TouchScript;
 using UnityEngine.UI;
+using System.Linq;
 
 public class CreateDestroy_Reticle : MonoBehaviour {
 
@@ -44,11 +45,23 @@ public class CreateDestroy_Reticle : MonoBehaviour {
 		Debug.LogError ("Item "+ID+" Location "+touchPoint);
 
 		GameObject my_ret = Instantiate(reticlePrefab, new Vector3(touchPoint.x-960, touchPoint.y-540, 70), Quaternion.Euler(0, 0, 0)) as GameObject;
+		my_ret.name = "reticle_" + ID;
 		my_ret.transform.SetParent (mainPanel.transform);
 	}
 	
 	public void STE(string ID, Vector3 touchPoint){
 		Debug.LogError ("performing SmartTouchEnd functions!");
 		Debug.LogError ("Item "+ID+" Location "+touchPoint);
+		GameObject my_retDestroy = mainPanel.transform.FindChild ("reticle_" + ID).gameObject;
+		//GameObject my_retDestroy = GameObject.Fin
+		//my_retDestroy.SetActive (false);
+		//Destroy (my_retDestroy);
+		foreach (Transform child in mainPanel.transform.GetComponentsInChildren<Transform>().ToList()) {
+
+			if(child.gameObject.tag == "Reticle" && child.gameObject.tag != "p_Manager" && child.gameObject.tag != "BB"){
+				Debug.Log ("tag"+child.gameObject.tag);
+				Destroy (child.gameObject);
+			}
+		}
 	}
 }

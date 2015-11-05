@@ -25,6 +25,7 @@ public class SocketToJSON : MonoBehaviour{
 		smartTouchPoint.x = e.data.GetField("x").n;
 		smartTouchPoint.y = 1080 - e.data.GetField("y").n;
 		Debug.LogError (RFID);
+		//Debug.Log
 		RFIDEventManager.rfidDetected (RFID, ST, smartTouchPoint);
 	}
 

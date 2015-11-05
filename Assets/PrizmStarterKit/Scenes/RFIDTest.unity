@@ -334,7 +334,7 @@ GameObject:
   - 114: {fileID: 1276726656}
   m_Layer: 5
   m_Name: p_Manager
-  m_TagString: Untagged
+  m_TagString: p_Manager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -395,8 +395,8 @@ GameObject:
   - 222: {fileID: 1301877441}
   - 114: {fileID: 1301877440}
   m_Layer: 5
-  m_Name: Image
-  m_TagString: Untagged
+  m_Name: i_RFID_BoardImage
+  m_TagString: BB
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -435,7 +435,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1301877439}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 122.999939}
+  m_LocalPosition: {x: 0, y: 0, z: 122.999924}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1276726658}
