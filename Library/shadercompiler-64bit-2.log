@@ -1,5 +1,0 @@
-Base path: /Applications/Unity/Unity.app/Contents
-Pipe name: \\.\pipe\UnityShaderCompiler-64bit-2-485564416
-Cmd: getPlatforms
-Cmd: compileSnippet
-  api=0 type=0 insize=1705 outsize=1344 kw=SOFTPARTICLES_ON ok=1
