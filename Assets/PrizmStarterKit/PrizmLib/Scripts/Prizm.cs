@@ -12,7 +12,7 @@ using SocketIO;
 /// 
 namespace Prizm {
 	public enum touchType{smartTouchStart, smartTouchEnd};
-	public delegate void rfidDetected(string ID, Vector3 location);
+	public delegate void rfidDetected(string ID, Vector3 location, RfidBinding rf_ID_Object);
 
 
 	/// <summary>
@@ -86,9 +86,9 @@ namespace Prizm {
 			RfidBinding rfidObject;
 			if (checkJSON.compareJSON (ID, ST, location, out rfidObject)) {
 				if (ST == touchType.smartTouchEnd) {
-					rfidObject.smartTouchEnd (ID, location);
+					rfidObject.smartTouchEnd (ID, location, rfidObject);
 				} else if (ST == touchType.smartTouchStart) {
-					rfidObject.smartTouchStart (ID, location);
+					rfidObject.smartTouchStart (ID, location, rfidObject);
 				}
 			} else
 				Debug.LogError ("Unregistered RFID: " + ID);

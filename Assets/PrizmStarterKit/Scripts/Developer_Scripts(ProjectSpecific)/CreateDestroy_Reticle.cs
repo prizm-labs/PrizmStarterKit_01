@@ -39,23 +39,24 @@ public class CreateDestroy_Reticle : MonoBehaviour {
 		}
 	}
 	
-	public void STS(string ID, Vector3 touchPoint){
+	public void STS(string ID, Vector3 touchPoint, RfidBinding rf_Object){
 		
 		Debug.LogError ("performing SmartTouchStart functions!");
-		Debug.LogError ("Item "+ID+" Location "+touchPoint);
+		Debug.LogError ("Item "+rf_Object.attribute[0]+" Location "+touchPoint);
 
 		GameObject my_ret = Instantiate(reticlePrefab, new Vector3(touchPoint.x-960, touchPoint.y-540, 70), Quaternion.Euler(0, 0, 0)) as GameObject;
-		my_ret.name = "reticle_" + ID;
+		my_ret.name = "reticle_" + rf_Object.attribute[0];
 		my_ret.transform.SetParent (mainPanel.transform);
+//		if (touchPoint.x-960 < 0) {
+//			my_ret.GetComponent<ParticleSystem>().startColor = Color.yellow;
+//
+//		}
 	}
 	
-	public void STE(string ID, Vector3 touchPoint){
+	public void STE(string ID, Vector3 touchPoint, RfidBinding rf_Object){
 		Debug.LogError ("performing SmartTouchEnd functions!");
 		Debug.LogError ("Item "+ID+" Location "+touchPoint);
 		GameObject my_retDestroy = mainPanel.transform.FindChild ("reticle_" + ID).gameObject;
-		//GameObject my_retDestroy = GameObject.Fin
-		//my_retDestroy.SetActive (false);
-		//Destroy (my_retDestroy);
 		foreach (Transform child in mainPanel.transform.GetComponentsInChildren<Transform>().ToList()) {
 
 			if(child.gameObject.tag == "Reticle" && child.gameObject.tag != "p_Manager" && child.gameObject.tag != "BB"){
