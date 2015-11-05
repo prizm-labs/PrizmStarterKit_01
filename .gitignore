@@ -1,22 +1,10 @@
- ##################
- # Unity ignores:
- #
- # !!! WARNING !!!
- #
- # … you MUST convert Unity to using Metafiles *before* you start using this
- #  .gitignore file, or you WILL lose data!
- #
+ $PROJDIR/Temp/
+ $PROJDIR/Library/
+ $PROJDIR/Obj/
  
- # OS X only:
- .DS_Store
- *.swp
- *.Trashes
- 
- # All platforms:
- Library/*
- Temp/*
  *.csproj
- *.pidb
  *.unityproj
  *.sln
+ *.user
  *.userprefs
+ *.DS_store
