@@ -60,7 +60,7 @@ public class Arc4RandomNumberGenerator {
 
     	// Discard early keystream, as per recommendations in:
     	// http://www.wisdom.weizmann.ac.il/~itsik/RC4/Papers/Rc4_ksa.ps
-    	for (int i = 0; i < 256; i++)
+    	for (int i = 0; i < 3072; i++)
         	GetByte();
     	count = STIR_INCREMENT_CONST;
 	}
